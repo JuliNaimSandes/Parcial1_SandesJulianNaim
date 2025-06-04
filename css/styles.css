@@ -1,3 +1,5 @@
+/*Toda linea que tenga un "**" al final, es una linea insertada por mi.*/
+
 /* Estilos globales */
 body {
   font-family: Arial, sans-serif;
@@ -12,11 +14,13 @@ h2 {
 }
 
 header {
-
   padding: 10px 20px;
+  background-color: #218838;/**/
+  display: flex;/**/
+  justify-content: space-around;/**/
 }
 
-header > a {
+header > a, .nombreAlumno/**/ {
   text-decoration: none;
   color: white;
 }
@@ -39,18 +43,41 @@ header > a {
 
 .carrito {
   font-size: 1rem;
+  color:white; /**/
 }
 
-
+/**/
+.card-producto button{
+  color: white;
+  background-color: #218838;
+  border: 0px;
+  border-radius: 6%;
+  width: 120px;
+  height: 48px;
+  transition-duration: 0.18s;
+}
+/**/
 
 /* Seccion productos */
 .seccion-productos {
   padding: 20px;
 }
 
+/**/
+.contenedor-productos{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+/**/
+
 .card-producto {
   border: 1px solid #ccc;
-
+  margin: 10px 10px; /**/
+  width: 256px; /**/
+  height: 256px; /**/
 }
 
 .card-producto img {
@@ -70,10 +97,17 @@ header > a {
 }
 
 .card-producto button:hover {
-  background-color: #218838;
+  background-color: greenyellow; /**/
+  transition-duration: 0.18s; /**/
 }
 
-
+/**/
+.card-producto button:active {
+  background-color: lightgreen;
+  color: black;
+  transition-duration: 0.18s;
+}
+/**/
 
 /* Seccion carrito */
 .seccion-carrito {
@@ -85,6 +119,11 @@ header > a {
 #items-carrito {
   padding: 10px 0;
   list-style-type: none;
+  display: flex; /**/
+  flex-direction: row;
+  flex-wrap: wrap; /**/
+  align-content: center; /**/
+  justify-content: space-evenly; /**/
 }
 
 .nombre-item, .info-carrito {
@@ -93,7 +132,62 @@ header > a {
 
 .boton-eliminar {
   cursor: pointer;
+  color: white; /**/
+  background-color: red; /**/
+  border: 0px; /**/
+  border-radius: 6%;/**/
+  width: 80px;/**/
+  height: 32px;/**/
+  transition-duration: 0.18s;/**/
+  margin-left: 100px; /**/
+  margin-top: 16px; /**/
 }
+
+/**/
+.boton-eliminar  button:active {
+  background-color: pink;
+  color: black;
+  transition-duration: 0.18s;
+}
+
+.prod-botones{
+  display:flex;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.bloque-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+#btn_OrdenPrecio, #btn_OrdenNombre, #btn_Vaciar {
+  cursor: pointer;
+  color: white;
+  background-color: blue;
+  border: 0px;
+  border-radius: 5%;
+  width: 120px;
+  height: 48px;
+  transition-duration: 0.18s;
+  margin: 20px 20px;
+}
+
+#btn_OrdenPrecio:hover, #btn_OrdenNombre:hover, #btn_Vaciar:hover {
+  background-color: skyblue;
+  transition-duration: 0.18s;
+}
+
+#btn_OrdenPrecio:active, #btn_OrdenNombre:active, #btn_Vaciar:active {
+  background-color: cyan;
+  color: black;
+  transition-duration: 0.18s;
+}
+/**/
 
 .hidden {
   display: none;

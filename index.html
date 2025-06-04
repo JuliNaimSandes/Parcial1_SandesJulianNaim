@@ -30,30 +30,33 @@
     
     <!-- Contenedor principal -->
     <main>
-    <section class="seccion-productos">
-        <h2>Nuestras frutas</h2>
-        <!--Cambios por el alumno!-->
-        <button id="btn_OrdenPrecio" onclick="ordenarProductos(1)">Ordenar por Precio</button>
-        <button id="btn_OrdenNombre" onclick="ordenarProductos(0)">Ordenar por Nombre</button>
-        <button id="btn_Vaciar" onclick="vaciarCarrito()">Vaciar Carrito</button>
-        <!--Fin de cambios-->
-        <div class="contenedor-productos"></div>
-    </section>
+        <section class="seccion-productos">
+            <!--Cambios por el alumno!-->
+            <div class="prod-botones">
+                <button id="btn_OrdenPrecio" onclick="ordenarProductos(1)">Ordenar por Precio</button>
+                <button id="btn_OrdenNombre" onclick="ordenarProductos(0)">Ordenar por Nombre</button>
+                <button id="btn_Vaciar" onclick="vaciarCarrito()">Vaciar Carrito</button>
+            </div>
+            <!--Fin de cambios-->
+            
+            <h2>Nuestras frutas</h2>
+            <div class="contenedor-productos"></div>
+        </section>
 
 
-    <!-- Seccion carrito -->
-    <section class="seccion-carrito">
-        <h2>Carrito</h2>
-        
-        <div id="items-carrito">
-            <p>No hay elementos en el carrito.</p>
-        </div>
+        <!-- Seccion carrito -->
+        <section class="seccion-carrito">
+            <h2>Carrito</h2>
+            
+            <div id="items-carrito">
+                <p>No hay elementos en el carrito.</p>
+            </div>
 
-        <div class="total-carrito">
-            <p>Total: <span id="precio-total">$0.00</span></p>
-        
-        </div>
-    </section>
+            <div class="total-carrito">
+                <p>Total: <span id="precio-total">$0.00</span></p>
+            
+            </div>
+        </section>
 
     </main>
 </body>
